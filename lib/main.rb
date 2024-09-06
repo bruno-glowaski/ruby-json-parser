@@ -2,8 +2,8 @@
 
 require_relative 'json'
 
-string = '  { }   '
+input = STDIN.read
 
 parser = JSON.parser
 
-puts parser.parse(string)
+puts parser.parse(input)
